@@ -15,12 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('users', 'UserController@index');
-//Route::get('users/create', 'UserController@create');
-//Route::post('users', 'UserController@store');
-//Route::get('users/{id}/edit', 'UserController@edit');
-//Route::get('users/{id}', 'UserController@show');
-//Route::delete('users/{id}', 'UserController@destroy');
-//Route::put('users/{id}', 'UserController@update');
+// press ctrl+b or ctrl+click
+Route::get('users', 'UserController@index');
+Route::get('users/create', 'UserController@create');
+Route::post('users', 'UserController@store');
+Route::get('users/{id}/edit', 'UserController@edit');
+Route::get('users/{id}', 'UserController@show');
+Route::delete('users/{id}', 'UserController@destroy');
+Route::put('users/{id}', 'UserController@update');
 
 Route::resource('users', 'UserController');
