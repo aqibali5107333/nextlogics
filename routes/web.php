@@ -25,3 +25,6 @@ Route::delete('users/{id}', 'UserController@destroy');
 Route::put('users/{id}', 'UserController@update');
 
 Route::resource('users', 'UserController');
+
+Route::get('charge', 'ChargeController@index');
+Route::post('charge', 'ChargeController@store');
